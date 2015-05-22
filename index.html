@@ -43,6 +43,16 @@
                     <img src="images/gdi_logo_badge.png" alt="" />
 				</section>
                 <section>
+                  <h3>What is Girl Develop It?</h3>
+                  <ul>
+                    <li>A 501c3 non-profit organization dedicated to making learning software development affordable and accessible to all women</li>
+                    <li>Founded in NYC in 2010 by Sara Chipps, CTO of the Flatiron School and Vanessa Hurst, founder of CodeMontage
+                    </li>
+                    <li>Now 36 chapters in cities around the US and growing.</li>
+                    <li>Thanks for supporting the Central VA chapter!</li>
+                  </ul>        
+                </section>        
+                <section>
                     <h2>Welcome!</h2>
                     <div class="left-align">
                         <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
@@ -78,13 +88,15 @@
                         </li>
                         <li class="fragment">Building a web site
                             <ul>
-                                <li>Considerations, UX &amp; IA, tools</li>
+                                <li>Considerations, User Experience (UX) &amp; Information Architecture (IA), commonly used tools</li>
                             </ul>
                         </li>
                         <li class="fragment">Web development professionals
                             <ul>
                                 <li>Team structure, hiring one, becoming one</li>
                             </ul>
+                        </li>
+                        <li class="fragment">(Don't worry about taking detailed notes - I'll send these slides out after class)
                         </li>
                     </ul>
                     <aside class="notes">
@@ -114,22 +126,24 @@
                     <section>
                         <h3>Terms</h3>
                         <div class="left-align">
-                            <p class="fragment"><strong>HTML</strong>: Hyper Text Markup Language - The code structure used to convey the content of a web site</p>
-                            <p class="fragment"><strong>CSS</strong>: Cascading Style Sheets - A language used to describe the presentation of the content</p>
-                            <p class="fragment"><strong>WYSIWYG</strong>: What You See Is What You Get - A type of editing software meant to be used by those who don't know how to code</p>
+                            <p class="fragment"><strong>Programming Language</strong>: computers are fast but not very smart, people are smart but not very fast. Programming languages are a set of conventions and instructions that allow people to translate their ideas into instructions a computer can execute.</p>
+                            <p class="fragment">There are many programming languages, each with their own tools and tricks that make certain human ideas easier to describe to a computer.</p>
+                            <p class="fragment">A typical computer programmer uses 2 or more different languages in each job, and learns new languages every few years.</p>
                         </div>
-                        <aside class="notes">
-                            <ul>
-                                <li>WYSIWYG - Dreamweaver is the most common example</li>
-                            </ul>
-                        </aside>
                     </section>
-
                     <section>
                         <h3>Terms</h3>
                         <div class="left-align">
-                            <p class="fragment"><strong>IDE</strong>: Integrated Development Environment - Software meant to support the entire development process, often including compilation for a server-side language</p>
-                            <p class="fragment"><strong>CMS</strong>: Content Management System - A program that allows publishing, editing, and modifying content as well as maintenance from a central interface</p>
+                            <p class="fragment"><strong>HTML</strong>: Hyper Text Markup Language - The code structure used to convey the content of a web site</p>
+                            <p class="fragment"><strong>CSS</strong>: Cascading Style Sheets - A language used to describe the presentation of the content</p>
+                            <p class="fragment"><strong>WYSIWYG</strong>: What You See Is What You Get - A style of editing software meant to be used by those who want to add or edit website content, but don't want to interact with code. Example: google sites</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="left-align">
+                            <p class="fragment"><strong>IDE</strong>: Integrated Development Environment - this is software some programmers use when building other software; IDEs can provide tools to help programmers with code organization, highlighting, debugging tools, compiling</p>
+                            <p class="fragment"><strong>CMS</strong>: Content Management System - A program that allows publishing, editing, and modifying content as well as maintenance from a central interface (ex. WordPress, Drupal)</p>
                             <p class="fragment"><strong>Open source</strong>: A program in which the source code is available to the general public for use and/or modification from its original design</p>
                         </div>
                         <aside class="notes">
@@ -143,7 +157,7 @@
 
                     <section>
                         <div class="left-align">
-                            <p class="fragment"><strong>API</strong>: Application Programming Interface - An easy-to-use interface or set of tools made available to access a complex application</p>
+                            <p class="fragment"><strong>API</strong>: Application Programming Interface - the set of questions a client application is allowed to ask a server application, generally used for retrieving or storing data.</p>
                             <p class="fragment"><strong>IP Address</strong>: Internet Protocol Address - A unique address for a computer or a server. Some IP Addresses are only unique to the network they are on while others are completely unique</p>
                             <p class="fragment"><strong>DNS</strong>: Domain Name Service - A directory that associates domain names with host IPs to allow users to connect to web sites via URLs</p>
                         </div>
@@ -185,14 +199,20 @@
                 </section>
 
                 <section>
+                    <h3>Example: twitter</h3>
+                    <div style="width: 100%; ">
+                        <img src="images/browser request diagram.png" alt="" />
+                    </div>
+                </section>
+                <section>
                     <h3>Clients vs. Servers</h3>
                     <div class="left-align">
                         <p class="fragment">Clients make requests, servers fulfill them (usually).</p>
-                        <p class="fragment">For our web discussions, client = browser, but search engine crawlers, command line interfaces, and other applications can also behave as clients.</p>
+                        <p class="fragment">Requests are like questions: clients ask them, and servers answer them. </p>
+                        <p class="fragment">For our web discussions, client = browser, but search engine crawlers, mobile apps, command line interfaces, and other applications can also behave as clients.</p>
                         <p class="fragment">While any type of computer can be used as a server, they are generally larger and more powerful than others.</p>
                     </div>
                 </section>
-
                 <section>
                     <h3>Browsers</h3>
                     <img class="fragment" src="images/StatCounter-browser-ww-monthly-200807-201212.jpg" alt="" />
@@ -206,7 +226,7 @@
 
                 <section>
                     <section>
-                        <h3>Parsing languages &amp; media</h3>
+                        <h3>Website components</h3>
                         <div style="width: 48%; margin-right: 2%; float: left; text-align: left;">
                             <p>Client-side:</p>
                             <ul class="fragment">
@@ -215,10 +235,11 @@
                                 <li>JavaScript</li>
                                 <li>Flash (with plugin)</li>
                                 <li>Images</li>
+                                <li>Audio / Video</li>
                             </ul>
                         </div>
                         <div style="width: 50%; float: left; text-align: left;">
-                            <p>Sever-side:</p>
+                            <p>Server-side:</p>
                             <ul class="fragment">
                                 <li>PHP</li>
                                 <li>Perl</li>
@@ -232,19 +253,19 @@
                         </div>
                     </section>
                     <section>
-                        <h3>Not languages</h3>
+                        <h3>Building Blocks</h3>
                         <ul>
-                            <li class="fragment">Libraries are collections of programming shortcuts for a language
+                            <li class="fragment"><b>Libraries</b> are collections of programming shortcuts for a language
                                 <ul>
-                                    <li>jQuery, Prototype, &amp; Mootools</li>
+                                    <li>jQuery, Prototype, &amp; Mootools are examples of libraries in the client-side programming language javascript</li>
                                 </ul>
                             </li>
-                            <li class="fragment">Frameworks may include libraries, software, and more. Basically, a collection of assets/tools that helps you work in a particular language, usually from scratch
+                            <li class="fragment"><b>Frameworks</b> may include libraries, software, and more. Basically, a collection of assets/tools that helps you work in a particular language, usually from scratch
                                 <ul>
-                                    <li>Rails, Cake</li>
+                                    <li>Rails, CakePHP</li>
                                 </ul>
                             </li>
-                            <li class="fragment">A specification is a set of currently acceptable rules for a given language
+                            <li class="fragment">A <b>specification</b> is a set of currently acceptable rules for a given language
                                 <ul>
                                     <li>HTML5 expands on the HTML4 spec and deprecates some older HTML syntax</li>
                                 </ul>
@@ -252,9 +273,10 @@
                         </ul>
                     </section>
                     <section>
-                        <h3>Not languages</h3>
+                        <h3>Building Blocks</h3>
                         <ul>
-                            <li>AJAX is none of these, but is a technique combining multiple languages to return results from the server without needing to refresh a page. It stands for Asynchronous JavaScript And XML.</li>
+                            <li class="fragment"><b>AJAX</b> is a special kind of building block very commonly used when building websites: it is a group of interrelated web development techniques used on the client-side to create asynchronous web applications. </li>                                <li class="fragment">When a developer uses AJAX, they can return results from the server without needing to refresh a page. This makes the user experience feel snappier.</li>
+                            <li class="fragment">AJAX stands for Asynchronous JavaScript And XML. XML is a commonly used structure for the response returned by the server when the client asks it a question</li>
                         </ul>
                     </section>
                 </section>
@@ -280,21 +302,13 @@
                         </ul>
                     </div>
                 </section>
-                <section>
-                        <h2>Web standards</h2>
-                        <p class="left-align">In general, this means a site should:</p>
-                        <ul>
-                            <li class="fragment">Have valid HTML, CSS, and JavaScript</li>
-                            <li class="fragment">Meet accessibility standards</li>
-                            <li class="fragment">Meet semantic guidelines</li>
-                            <li class="fragment">Have valid meta data</li>
-                            <li class="fragment">Have proper character encoding</li>
-                        </ul>
-
-                    </section>
 <!-- Stretch break!! -->
                 <section>
                     <h2>Break time!</h2>
+                        <ul>
+                            <li >Next up, we're going to talk about building websites.</li>
+                            <li >What's your great idea for a new website?</li>
+                        </ul>
                 </section>
 
                 <section>
@@ -321,10 +335,21 @@
                         <h3>User Experience &amp; Information Architecture</h3>
                         <p>A user-friendly, well-architected site will:</p>
                         <ul>
-                            <li class="fragment">Deepen engagement</li>
-                            <li class="fragment">Increase conversion</li>
+                            <li class="fragment">Deepen engagement (a marketing term for how often customers interact with your brand and product)</li>
+                            <li class="fragment">Increase conversion (the percentage of users visiting your website who buy the product you are selling)</li>
                             <li class="fragment">Raise satisfaction</li>
                             <li class="fragment">Bring users back</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Key Strategies</h3>
+                        <ul>
+                            <li class="fragment">The most important first step in building a website is getting your ideas organized.</li>
+                            <li class="fragment">What do you want users to see on your site?</li>
+                            <li class="fragment">What do you want them to do?</li>
+                            <li class="fragment">What information do you need to show them to make this happen?</li>
+                            <li class="fragment">How should you order information and interactions in a way that users will have a good experience on your site?</li>
+                            <li class="fragment">What are other sites doing well that you'd like to emulate? What are other sites doing poorly that you'd like to avoid?</li>
                         </ul>
                     </section>
 
@@ -347,12 +372,13 @@
                 </section>
 
                 <section>
-                    <h3>WYSIWYG vs. hand-coding</h3>
+                    <h2>Getting started<h2><h4>WYSIWYG vs. hand-coding</h4>
                     <ul>
-                        <li>WYSIWYG code editors make general assumptions about what you intended to write which often is not accurate or best</li>
-                        <li class="fragment">They make the job of professionals <em>much</em> more difficult when the code is written poorly and filled with junk</li>
-                        <li class="fragment">To truly understand what you are building, you need to learn the fundamental components</li>
-                        <li class="fragment">Once you know how to code by hand, there are no limits to what you can build!</li>
+                        <li class="fragment">WYSIWYG code editors (like google sites) make general assumptions about what you intend to write and build</li>
+                        <li class="fragment">Sometimes these assumptions and constraints help you build your site faster</li>
+                        <li class="fragment">But sometimes these constraints make your job harder, especially when you decide to grow your website</li>
+                        <li class="fragment">It always helps to understand the fundamental building blocks of what you are building</li>
+                        <li class="fragment">If you decide to code your site by hand, there are no limits to what you can build!</li>
                     </ul>
                 </section>
 
@@ -367,17 +393,9 @@
                         </ul>
                     </section>
                     <section>
-                        <h2>Demo: How'd they do that?</h2>
-                        <a href="http://unitedmakers.com/" target="_blank">Fancy flowed text</a><br />
-                        <a href="http://filmstartheband.com/" target="_blank">Onclick expansion</a><br />
-                        <a href="http://www.qvc.com/" target="_blank">Slideshow spelunking</a>
-                        <aside class="notes">
-                            <ul>
-                                <li>Show how to use browser inspection</li>
-                                <li>Show how to dissect a couple small interesting components</li>
-                                <li>Obviously, swap these out for whatever examples work for you</li>
-                            </ul>
-                        </aside>
+                        <h2>Demo: Website Inspiration</h2>
+                        <a href="http://www.rleonardi.com/interactive-resume/" target="_blank">A Mario Brothers inspired interactive resume</a><br />
+                        <a href="http://jenniferdewalt.com/" target="_blank">Fun 1-day projects from Jennifer Dewalt</a><br />
                     </section>
                 </section>
 
@@ -510,13 +528,16 @@
                         <li>Degrees and certifications: they don't hurt</li>
                         <li class="fragment">Be curious, a problem solver, and intrepid</li>
                         <li class="fragment">Build things. For yourself, if no one will pay you</li>
-                        <li class="fragment">Through all of this, learn your craft and how things work</li>
+                        <li class="fragment">Your portfolio of personal projects, your github account, and your history of helping answer other peoples' questions online (like on stackoverflow.com) are becoming the new tech resume</li>
+                        <li class="fragment">Most importantly, build things that matter to you!</li>
                     </ul>
                 </section>
                 <section>
                   <h2>Questions?</h2>
                   <div style = "font-size:1200%; height:100%; margin-top:40%" class ="blue">?
                     <div class ="clear"></div></div>
+                </section>
+                <section>
                 </section>
 			</div>
   		<footer>
